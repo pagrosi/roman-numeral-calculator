@@ -1,25 +1,11 @@
-# Next.js + Jest
+# Integer to roman number converter
 
-This example shows how to configure Jest to work with Next.js.
+This task was made for Properti, it's based on NextJS+Jest starter. A roman number converter, that should accept values from 1 to 1000
 
-This includes Next.js' built-in support for Global CSS, CSS Modules and TypeScript.
-
-## How to Use
-
-Quickly get started using [Create Next App](https://github.com/vercel/next.js/tree/canary/packages/create-next-app#readme)!
-
-In your terminal, run the following command:
+## Run dev stage
 
 ```bash
-npx create-next-app --example with-jest with-jest-app
-```
-
-```bash
-yarn create next-app --example with-jest with-jest-app
-```
-
-```bash
-pnpm create next-app --example with-jest with-jest-app
+npm run dev
 ```
 
 ## Run Jest Tests
