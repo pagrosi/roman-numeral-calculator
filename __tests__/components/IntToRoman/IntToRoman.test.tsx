@@ -5,7 +5,7 @@ import { convertIntToRoman } from '@/components/IntToRoman/IntToRoman';
 describe('IntToRoman component', () => {
 	test('renders an input element', () => {
 		const { getByLabelText } = render(<IntToRoman />);
-		const inputElement = getByLabelText('Integer Input:');
+		const inputElement = getByLabelText('Integer input:');
 
 		expect(inputElement).toBeInTheDocument();
 	});

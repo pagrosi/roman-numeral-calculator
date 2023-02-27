@@ -3,7 +3,7 @@
 exports[`IntToRoman component renders correctly 1`] = `
 <div>
   <label>
-    Integer Input:
+    Integer input:
      
     <input
       max="1000"

@@ -10,7 +10,7 @@ export const validateInput = (inputNumber: number): boolean =>
 
 export const Input = (props: IProps): JSX.Element => (
 	<label>
-		Integer Input:{' '}
+		Integer input:{' '}
 		<input
 			value={props.value}
 			onChange={(e) => {
