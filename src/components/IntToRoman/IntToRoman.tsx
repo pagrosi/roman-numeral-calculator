@@ -23,6 +23,10 @@ export const IntToRoman = (): JSX.Element => {
 	return (
 		<>
 			<Input value={intInputNumber} onChange={setIntInputNumber} />
+			<div>
+				Roman numerals output is:{' '}
+				{convertIntToRoman(intInputNumber)}
+			</div>
 		</>
 	);
 };
