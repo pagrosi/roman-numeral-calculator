@@ -3,13 +3,17 @@ interface IProps {
 	onChange: (value: number) => void;
 }
 
+export const validateInput = (inputNumber: number): boolean =>
+	inputNumber >= 1 && inputNumber <= 1000;
+
 export const Input = (props: IProps): JSX.Element => (
 	<label>
 		Integer Input:{' '}
 		<input
 			value={props.value}
 			onChange={(e) => {
-				props.onChange(e.target.valueAsNumber);
+				if (validateInput(e.target.valueAsNumber))
+					props.onChange(e.target.valueAsNumber);
 			}}
 			type="number"
 			min={1}
