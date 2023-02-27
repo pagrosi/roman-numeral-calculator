@@ -16,13 +16,16 @@ describe('IntToRoman component', () => {
 	});
 
 	test('updates the ouput to roman numeral when input changes', () => {
-		const { getByLabelText, getByText } = render(<IntToRoman />);
+		const { getByLabelText, getByText, container } = render(
+			<IntToRoman />
+		);
 		const inputElement = getByLabelText('Integer input:');
 		const expectedOutputText = 'Roman numerals output is: L';
 
 		fireEvent.change(inputElement, { target: { value: 50 } });
 
 		expect(getByText(expectedOutputText)).toBeInTheDocument;
+		expect(container).toMatchSnapshot();
 	});
 });
 

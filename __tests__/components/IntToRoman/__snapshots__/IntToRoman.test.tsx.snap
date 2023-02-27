@@ -19,3 +19,23 @@ exports[`IntToRoman component renders correctly 1`] = `
   </div>
 </div>
 `;
+
+exports[`IntToRoman component updates the ouput to roman numeral when input changes 1`] = `
+<div>
+  <label>
+    Integer input:
+     
+    <input
+      max="1000"
+      min="1"
+      type="number"
+      value="50"
+    />
+  </label>
+  <div>
+    Roman numerals output is:
+     
+    L
+  </div>
+</div>
+`;
