@@ -9,6 +9,11 @@ describe('IntToRoman component', () => {
 
 		expect(inputElement).toBeInTheDocument();
 	});
+
+	test('renders correctly', () => {
+		const { container } = render(<IntToRoman />);
+		expect(container).toMatchSnapshot();
+	});
 });
 
 describe('convertIntToRoman function', () => {

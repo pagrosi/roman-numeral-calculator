@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IntToRoman component renders correctly 1`] = `
+<div>
+  <label>
+    Integer Input:
+     
+    <input
+      max="1000"
+      min="1"
+      type="number"
+      value="1"
+    />
+  </label>
+  <div>
+    Roman numerals output is:
+     
+    I
+  </div>
+</div>
+`;
