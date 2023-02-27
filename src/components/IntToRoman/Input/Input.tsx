@@ -1,5 +1,5 @@
 export const Input = (): JSX.Element => (
 	<label>
-		<input type="number" />
+		Integer Input: <input type="number" />
 	</label>
 );
