@@ -1,10 +1,12 @@
+import { isRoundNumber } from '@/utils/isRoundNumber';
+
 interface IProps {
 	value: number;
 	onChange: (value: number) => void;
 }
 
 export const validateInput = (inputNumber: number): boolean =>
-	inputNumber >= 1 && inputNumber <= 1000;
+	inputNumber >= 1 && inputNumber <= 1000 && isRoundNumber(inputNumber);
 
 export const Input = (props: IProps): JSX.Element => (
 	<label>
