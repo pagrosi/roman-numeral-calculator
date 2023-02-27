@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 import { IntToRoman } from '@/components/IntToRoman';
 import { convertIntToRoman } from '@/components/IntToRoman/IntToRoman';
 
@@ -13,6 +13,16 @@ describe('IntToRoman component', () => {
 	test('renders correctly', () => {
 		const { container } = render(<IntToRoman />);
 		expect(container).toMatchSnapshot();
+	});
+
+	test('updates the ouput to roman numeral when input changes', () => {
+		const { getByLabelText, getByText } = render(<IntToRoman />);
+		const inputElement = getByLabelText('Integer input:');
+		const expectedOutputText = 'Roman numerals output is: L';
+
+		fireEvent.change(inputElement, { target: { value: 50 } });
+
+		expect(getByText(expectedOutputText)).toBeInTheDocument;
 	});
 });
 
